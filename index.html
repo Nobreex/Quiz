@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Tela inicial -->
+    <div id="start-screen" class="screen">
+      <h1 class="title">Bem-vindo ao Quiz!</h1>
+      <p class="subtitle">Escolha um tema para começar:</p>
+      <div class="buttons-container">
+        <button class="btn" data-theme="sports">Esportes</button>
+        <button class="btn" data-theme="general">Conhecimentos Gerais</button>
+      </div>
+    </div>
+
+    <!-- Tela do quiz -->
+    <div id="quiz" class="screen hidden">
+      <h2 id="question" class="question">Pergunta</h2>
+      <ul id="answers" class="answers-list">
+        <!-- Respostas serão inseridas aqui -->
+      </ul>
+    </div>
+
+    <!-- Feedback da resposta -->
+    <div id="feedback" class="hidden">
+      <p id="feedback-message" class="feedback-message"></p>
+    </div>
+
+    <!-- Tela de resultado -->
+    <div id="result" class="screen hidden">
+      <h2 class="result-title">Resultado Final</h2>
+      <p id="score" class="score-text"></p>
+      <div id="summary" class="summary">
+        <p>Acertos: <span id="correct-count">0</span></p>
+        <p>Erros: <span id="wrong-count">0</span></p>
+      </div>
+      <button id="restart-btn" class="btn">Reiniciar</button>
+    </div>
+  </div>
+
+  
+  <footer> <p>&COPY;Diogo Nobre</p></footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

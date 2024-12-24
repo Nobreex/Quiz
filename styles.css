@@ -1,0 +1,191 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(70, 148, 238);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.quiz-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2ecc71;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+button, .btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 200px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+button:active, .btn:active {
+  transform: scale(1);
+}
+
+.hidden {
+  display: none;
+}
+
+#quiz {
+  text-align: center;
+}
+
+#answers {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#answers li {
+  margin: 10px 0;
+}
+
+#answers button {
+  background-color: #ecf0f1;
+  border: 2px solid #bdc3c7;
+  font-size: 1rem;
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+#answers button:hover {
+  background-color: #bdc3c7;
+  transform: scale(1.05);
+}
+
+#feedback-message {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: black;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
+
+.correct {
+  background-color: #2ecc71 !important;
+  color: white;
+}
+
+.incorrect {
+  background-color: #e74c3c !important;
+  color: white;
+}
+
+#result {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.score-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#summary p {
+  font-size: 1.1rem;
+}
+
+#restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 8px;
+}
+
+#restart-btn:hover {
+  background-color: #2980b9;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #333;  /* Cor de fundo do rodapé */
+  color: white;            /* Cor do texto */
+  text-align: center;      /* Centraliza o texto dentro do rodapé */
+  padding: 10px 0;         /* Espaçamento no topo e embaixo do rodapé */
+  width: 100%;             /* Faz com que o rodapé ocupe toda a largura da tela */
+  font-family: 'Verdana', sans-serif; /* Fonte */
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;               /* Remove a margem do parágrafo dentro do rodapé */
+  font-size: 14px;         /* Tamanho da fonte */
+}
