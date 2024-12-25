@@ -38,20 +38,20 @@ h1, h2 {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: black;
+  color: rgb(70, 148, 238);
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #2ecc71;
+  color: rgb(70, 148, 238);
 }
 
 .subtitle {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 30px;
-  color: black;
+  color: rgb(70, 148, 238);
 }
 
 .buttons-container {
@@ -175,7 +175,7 @@ button:active, .btn:active {
 
 /* Estilos do rodapé */
 footer {
-  background-color: #333;  /* Cor de fundo do rodapé */
+  background-color: rgb(70, 148, 238);  /* Cor de fundo do rodapé */
   color: white;            /* Cor do texto */
   text-align: center;      /* Centraliza o texto dentro do rodapé */
   padding: 10px 0;         /* Espaçamento no topo e embaixo do rodapé */
